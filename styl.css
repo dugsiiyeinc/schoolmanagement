@@ -1,0 +1,963 @@
+/* ===== RESET ===== */
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat', sans-serif;
+}
+
+body {
+line-height:1.6;
+background:#f1f5f9;
+}
+
+/* ===== CONTAINER ===== */
+
+.container {
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* ===== HEADER ===== */
+
+.main-header {
+position:sticky;
+top:0;
+background:#0f172a;
+z-index:999;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.main-header .container {
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 0;
+}
+
+/* Logo */
+
+.logo h1 a {
+color:white;
+text-decoration:none;
+font-size:24px;
+}
+
+.logo span {
+color:#2563eb;
+}
+
+/* Navbar */
+
+.main-menu {
+display:flex;
+list-style:none;
+}
+
+.main-menu li a {
+color:white;
+text-decoration:none;
+padding:10px 15px;
+display:block;
+transition:0.3s;
+}
+
+.main-menu li a:hover {
+color:#38bdf8;
+}
+
+/* Dropdown */
+
+.dropdown {
+position:absolute;
+top:100%;
+left:0;
+background:white;
+list-style:none;
+display:none;
+min-width:150px;
+border-radius:6px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.has-dropdown:hover .dropdown {
+display:block;
+}
+
+/* Header Right */
+
+.header-right {
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.search-box input {
+padding:6px 10px;
+border-radius:6px;
+border:none;
+}
+
+/* ===== BUTTON ===== */
+
+.btn {
+background:#2563eb;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+display:inline-block;
+}
+
+.btn:hover {
+background:#1d4ed8;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+position:relative;
+height:90vh;
+overflow:hidden;
+}
+
+#bg-video {
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay {
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(15,23,42,0.6);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-text {
+color:white;
+max-width:600px;
+}
+
+.hero-text span {
+color:#38bdf8;
+}
+
+/* ===== WELCOME ===== */
+
+.welcome {
+padding:80px 0;
+background:#f8fafc;
+}
+
+.welcome-text {
+text-align:center;
+}
+
+.welcome-text h2 {
+font-size:32px;
+color:#2563eb;
+}
+
+.welcome-text p {
+max-width:600px;
+margin:20px auto;
+color:#0f172a;
+
+font-size:18px;
+
+
+}
+
+
+/* ===== PROGRAMS MODERN ===== */
+
+.programs {
+padding:80px 0;
+background:white;
+}
+
+.section-title h2{
+text-align:center;
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.section-desc{
+max-width:600px;
+margin:10px auto 40px;
+text-align:center;
+color:#475569;
+font-size:20px
+margin-bottom:40px;
+}
+
+/* Grid */
+
+.program-grid {
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+/* Card */
+
+.program-card {
+
+background:#f8fafc;
+padding:30px 25px;
+
+border-radius:12px;
+
+text-align:center;
+
+transition:0.3s;
+
+border-top:4px solid #2563eb;
+
+position:relative;
+
+}
+
+/* Hover */
+
+.program-card:hover {
+
+transform:translateY(-10px);
+
+background:#e0f2fe;
+
+}
+
+/* Icon */
+
+.program-icon {
+
+font-size:40px;
+
+margin-bottom:15px;
+
+background:#2563eb;
+color:white;
+
+width:70px;
+height:70px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin-left:auto;
+margin-right:auto;
+
+border-radius:50%;
+
+}
+
+/* Title */
+
+.program-card h3 {
+
+margin-bottom:10px;
+
+color:#2563eb;
+
+}
+
+/* Text */
+
+.program-card p {
+
+color:#475569;
+
+font-size:15px;
+
+}
+/* ===== STATS ===== */
+
+.stats {
+background:#0f172a;
+color:white;
+padding:60px 0;
+}
+
+.stats-grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+text-align:center;
+gap:20px;
+}
+
+.stats h2 {
+color:#38bdf8;
+font-size:36px;
+}
+
+/* ===== TEACHERS ===== */
+
+.teachers {
+padding:80px 0;
+background:white;
+}
+
+.teacher-grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.teacher-card {
+text-align:center;
+background:#f1f5f9;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.teacher-card img {
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+transition:0.3s;
+}
+
+.teacher-card:hover img {
+transform:scale(1.05);
+}
+
+
+.events {
+padding:80px 0;
+background:#f8fafc;
+}
+
+/* Description */
+
+.section-desc{
+text-align:center;
+max-width:600px;
+margin:10px auto 40px;
+color:#475569;
+}
+
+/* Grid */
+
+.event-grid {
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+/* Card */
+
+.event-card {
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.event-card:hover {
+transform:translateY(-10px);
+}
+
+/* Image */
+
+.event-image {
+position:relative;
+}
+
+.event-image img {
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+/* Date Badge */
+
+.event-date {
+position:absolute;
+top:15px;
+left:15px;
+
+background:#2563eb;
+color:white;
+
+padding:6px 12px;
+border-radius:6px;
+
+font-size:14px;
+font-weight:600;
+}
+
+/* Content */
+
+.event-content {
+padding:20px;
+}
+
+.event-content h3 {
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.event-content p {
+color:#475569;
+font-size:15px;
+}
+
+/* ===== CTA ===== */
+
+.cta {
+background:#2563eb;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+//aboutus
+/* ===== ABOUT HERO ===== */
+
+.about-hero {
+background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+url("images/school-bg.jpg");
+background-size: cover;
+background-position: center;
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.about-hero h1 {
+font-size:40px;
+margin-bottom:15px;
+}
+
+.about-hero p {
+max-width:600px;
+margin:auto;
+color:#e2e8f0;
+}
+
+
+/* ===== HISTORY ===== */
+
+.history {
+padding:80px 0;
+background:white;
+}
+
+.history-grid {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+/* ===== CSS ONLY SLIDER ===== */
+
+.css-slider {
+position:relative;
+width:100%;
+height:350px;
+overflow:hidden;
+border-radius:12px;
+}
+
+/* All images stacked */
+
+.css-slider img {
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+
+opacity:0;
+animation:fade 16s infinite;
+}
+
+/* Each image delay */
+
+.css-slider img:nth-child(1){
+animation-delay:0s;
+}
+
+.css-slider img:nth-child(2){
+animation-delay:4s;
+}
+
+.css-slider img:nth-child(3){
+animation-delay:8s;
+}
+
+.css-slider img:nth-child(4){
+animation-delay:12s;
+}
+
+/* Fade animation */
+
+@keyframes fade {
+
+0% {opacity:0;}
+10% {opacity:1;}
+25% {opacity:1;}
+35% {opacity:0;}
+100% {opacity:0;}
+
+}
+
+.history-text p {
+margin-bottom:15px;
+color:#334155;
+}
+
+
+/* ===== MISSION ===== */
+
+.mission {
+padding:80px 0;
+background:#f8fafc;
+}
+
+
+/* ===== VALUES ===== */
+
+.values {
+padding:80px 0;
+background:white;
+}
+
+
+/* ===== WHY CHOOSE ===== */
+
+.why-choose {
+padding:80px 0;
+background:#f8fafc;
+}
+
+.choose-grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.choose-box {
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.choose-box img {
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.choose-box:hover {
+transform:translateY(-8px);
+}
+
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonials {
+padding:80px 0;
+background:white;
+}
+
+.testimonial-grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testimonial-card {
+background:#f1f5f9;
+padding:25px;
+border-radius:10px;
+font-style:italic;
+transition:0.3s;
+}
+
+.testimonial-card h4 {
+margin-top:15px;
+color:#2563eb;
+font-style:normal;
+}
+.testimonial-card img{
+width:100px;
+height:100px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+.testimonial-card:hover {
+transform:translateY(-6px);
+}
+
+
+/* ===== ACHIEVEMENTS ===== */
+
+.achievements {
+padding:80px 0;
+background:#0f172a;
+color:white;
+}
+
+.stat-box h2 {
+color:#38bdf8;
+font-size:36px;
+}
+
+.stat-box p {
+color:#e2e8f0;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+.history-grid {
+grid-template-columns:1fr;
+}
+
+.about-hero h1 {
+font-size:30px;
+}
+
+}
+
+//about us
+
+/* ================= ABOUT HERO ================= */
+
+.about-hero {
+
+background:
+linear-gradient(
+rgba(15,23,42,0.8),
+rgba(15,23,42,0.8)
+),
+url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+text-align:center;
+
+padding:120px 20px;
+
+}
+
+
+
+
+/* ================= HISTORY ================= */
+
+.history {
+
+padding:80px 0;
+background:white;
+
+}
+
+.history-grid {
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.history-image img {
+
+width:100%;
+
+border-radius:12px;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,0.2);
+
+}
+
+.history-text h2 {
+
+color:#2563eb;
+margin-bottom:20px;
+
+}
+
+.history-text p {
+
+margin-bottom:15px;
+
+color:#475569;
+font-size:16px;
+
+}
+
+
+
+/* ================= MISSION ================= */
+
+.mission {
+
+padding:80px 0;
+
+background:#f8fafc;
+
+}
+
+
+
+/* ================= VALUES ================= */
+
+.values {
+
+padding:80px 0;
+
+background:white;
+
+}
+
+
+
+/* ================= WHY CHOOSE ================= */
+
+.why-choose {
+
+padding:80px 0;
+
+background:#f8fafc;
+
+}
+
+
+
+/* GRID reused */
+
+.choose-grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+
+
+/* BOX */
+
+.choose-box {
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+text-align:center;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+.choose-box img {
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* Hover */
+
+.choose-box:hover {
+
+transform:translateY(-8px);
+
+}
+
+
+
+/* Titles */
+
+.choose-box h3 {
+
+color:#2563eb;
+
+margin-bottom:10px;
+
+}
+
+.choose-box p {
+
+color:#475569;
+
+font-size:15px;
+
+}
+
+
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievements {
+
+padding:80px 0;
+
+background:#0f172a;
+
+color:white;
+
+}
+
+.stat-box {
+
+text-align:center;
+
+}
+
+.stat-box h2 {
+
+font-size:36px;
+
+color:#38bdf8;
+
+margin-bottom:10px;
+
+}
+
+.stat-box p {
+
+color:#e2e8f0;
+
+}
+
+
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+
+padding:80px 0;
+
+background:white;
+
+}
+
+.testimonial-grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+}
+
+.testimonial-card {
+
+background:#f1f5f9;
+
+padding:25px;
+
+border-radius:12px;
+
+font-style:italic;
+
+transition:0.3s;
+
+}
+
+.testimonial-card h4 {
+
+margin-top:15px;
+
+color:#2563eb;
+
+font-style:normal;
+
+}
+
+.testimonial-card:hover {
+
+transform:translateY(-6px);
+
+background:#e0f2fe;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.history-grid {
+
+grid-template-columns:1fr;
+
+}
+
+.about-hero h1 {
+
+font-size:30px;
+
+}
+
+.about-hero p {
+
+font-size:16px;
+
+}
+
+}
