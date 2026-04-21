@@ -1,0 +1,266 @@
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.main-header{
+    background: #0f172a;
+    color: #fff;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo h1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo span{
+    color: #38bdf8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar .main-menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #38bdf8;
+}
+
+/* ===== DROPDOWN ===== */
+.has-dropdown{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #1e293b;
+    list-style: none;
+    padding: 10px 0;
+    width: 180px;
+    display: none;
+    border-radius: 6px;
+}
+
+.dropdown li{
+    padding: 8px 15px;
+}
+
+.dropdown li a{
+    color: #fff;
+}
+
+.has-dropdown:hover .dropdown{
+    display: block;
+}
+
+/* ===== RIGHT SIDE ===== */
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ===== SEARCH ===== */
+.search-box input{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    background: #38bdf8;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #0ea5e9;
+    color: #fff;
+}
+
+/* ===== MENU TOGGLE (HIDDEN DESKTOP) ===== */
+.menu-toggle{
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+
+    .navbar{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0f172a;
+        display: none;
+    }
+
+    .navbar .main-menu{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .menu-toggle{
+        display: block;
+        color: #fff;
+    }
+
+    .search-box{
+        display: none;
+    }
+}
+
+/* sign in */
+.sign-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sign-box {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.sign-box h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sign-box p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.sign-input {
+    margin-bottom: 15px;
+}
+
+.sign-input label {
+    font-size: 14px;
+}
+
+.sign-input input,
+.sign-input select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* button {
+    width: 100%;
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+} */
+
+form button {
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: #0ea5e9;
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    margin-top: 30px;
+    background-color: #152036;
+    text-align: center;
+}
+
+footer p {
+    padding: 20px 0px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+
+@media (max-width: 480px) {
+    .sign-box {
+        padding: 15px;
+    }
+}
