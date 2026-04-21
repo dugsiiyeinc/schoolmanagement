@@ -1,0 +1,269 @@
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.main-header{
+    background: #0f172a;
+    color: #fff;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo h1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo span{
+    color: #38bdf8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar .main-menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #38bdf8;
+}
+
+/* ===== DROPDOWN ===== */
+.has-dropdown{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #1e293b;
+    list-style: none;
+    padding: 10px 0;
+    width: 180px;
+    display: none;
+    border-radius: 6px;
+}
+
+.dropdown li{
+    padding: 8px 15px;
+}
+
+.dropdown li a{
+    color: #fff;
+}
+
+.has-dropdown:hover .dropdown{
+    display: block;
+}
+
+/* ===== RIGHT SIDE ===== */
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ===== SEARCH ===== */
+.search-box input{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    background: #38bdf8;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #0ea5e9;
+    color: #fff;
+}
+
+/* ===== MENU TOGGLE (HIDDEN DESKTOP) ===== */
+.menu-toggle{
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+
+    .navbar{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0f172a;
+        display: none;
+    }
+
+    .navbar .main-menu{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .menu-toggle{
+        display: block;
+        color: #fff;
+    }
+
+    .search-box{
+        display: none;
+    }
+}
+
+
+/* contact */
+.contact {
+    padding: 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.box p {
+    margin: 8px 0;
+}
+
+.box .p-strong {
+    font-weight: bold;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+}
+
+textarea::placeholder {
+    text-transform: capitalize;
+}
+
+form button {
+    border: none;
+    text-transform: uppercase;
+}
+
+form .btn {
+    padding: 15px;
+}
+
+/* map */
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.map {
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+
+    text-align: center;
+    width: 70%;
+
+}
+
+.map h2 {
+    margin-bottom: 15px;
+}
+
+.map iframe {
+    width: 90%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* footer */
+footer {
+    margin-top: 30px;
+    background-color: #152036;
+    text-align: center;
+}
+
+footer p {
+    padding: 20px 0px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+
+
+@media(max-width: 768px){
+    .map {
+        width: 350px;
+    }
+}
