@@ -206,19 +206,6 @@ body{
     border: 1px solid #ccc;
 }
 
-/* button {
-    width: 100%;
-    padding: 10px;
-    background: #38bdf8;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #0ea5e9;
-} */
 
 form button {
     border: none;
